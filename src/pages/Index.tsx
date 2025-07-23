@@ -1,4 +1,5 @@
 import ParticleBackground from "@/components/ParticleBackground";
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import DemoForm from "@/components/DemoForm";
@@ -10,6 +11,9 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-hero relative overflow-hidden">
       {/* Particle Background */}
       <ParticleBackground />
+      
+      {/* Navigation */}
+      <Navigation />
       
       {/* Main Content */}
       <div className="relative z-10">

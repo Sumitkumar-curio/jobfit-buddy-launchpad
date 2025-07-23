@@ -79,7 +79,7 @@ const stats = [
 
 export default function Features() {
   return (
-    <section className="py-24 px-4 lg:px-8 relative">
+    <section id="features" className="py-24 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
@@ -88,20 +88,20 @@ export default function Features() {
             <span>Why Choose JobFit Buddy</span>
           </div>
           
-          <h2 className="text-4xl lg:text-6xl font-bold">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold">
             <span className="text-gradient-primary">Powerful Features</span>
             <br />
             for Resume Success
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Our AI-powered platform combines advanced technology with industry expertise 
             to give your resume the competitive edge it needs.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (

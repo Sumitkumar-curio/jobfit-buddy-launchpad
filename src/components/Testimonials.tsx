@@ -47,7 +47,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 px-4 lg:px-8 relative">
+    <section id="reviews" className="py-24 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
@@ -56,17 +56,17 @@ export default function Testimonials() {
             <span>Success Stories</span>
           </div>
           
-          <h2 className="text-4xl lg:text-6xl font-bold">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold">
             What Our Users Are <span className="text-gradient-secondary">Saying</span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Join thousands of professionals who've transformed their careers with JobFit Buddy
           </p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}

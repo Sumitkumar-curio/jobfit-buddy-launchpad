@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-image.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 lg:px-8">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 lg:px-8 pt-20">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="text-center lg:text-left space-y-8 z-10">
@@ -14,7 +14,7 @@ export default function Hero() {
               <span>AI-Powered Resume Optimization</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
               Optimize Your{" "}
               <span className="text-gradient-primary">Resume</span>
               <br />
@@ -22,7 +22,7 @@ export default function Hero() {
               <span className="text-gradient-accent">ATS</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground max-w-2xl">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
               Transform your resume with AI-powered insights. Get 85%+ ATS scores, 
               personalized feedback, and land your dream job faster.
             </p>
@@ -39,7 +39,7 @@ export default function Hero() {
             </Button>
           </div>
 
-          <div className="flex items-center justify-center lg:justify-start gap-8 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 text-sm text-muted-foreground">
             <div className="text-center">
               <div className="text-2xl font-bold text-gradient-primary">95%</div>
               <div>Success Rate</div>
@@ -56,28 +56,28 @@ export default function Hero() {
         </div>
 
         {/* Right Content - Hero Image */}
-        <div className="relative lg:block hidden">
+        <div className="relative order-first lg:order-last">
           <div className="relative animate-float">
-            <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-20"></div>
+            <div className="absolute inset-0 bg-gradient-primary rounded-2xl lg:rounded-3xl blur-2xl opacity-20"></div>
             <img 
               src={heroImage} 
               alt="JobFit Buddy Dashboard" 
-              className="relative z-10 w-full h-auto rounded-3xl shadow-2xl border border-white/10"
+              className="relative z-10 w-full h-auto rounded-2xl lg:rounded-3xl shadow-2xl border border-white/10"
             />
           </div>
           
           {/* Floating Stats */}
-          <div className="absolute top-10 -left-6 glass-card animate-pulse-glow">
-            <div className="text-center p-4">
-              <div className="text-2xl font-bold text-gradient-primary">92%</div>
-              <div className="text-sm text-muted-foreground">ATS Score</div>
+          <div className="absolute top-4 sm:top-10 -left-2 sm:-left-6 glass-card animate-pulse-glow text-xs sm:text-sm">
+            <div className="text-center p-2 sm:p-4">
+              <div className="text-lg sm:text-2xl font-bold text-gradient-primary">92%</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">ATS Score</div>
             </div>
           </div>
           
-          <div className="absolute bottom-20 -right-8 glass-card animate-pulse-glow">
-            <div className="text-center p-4">
-              <div className="text-2xl font-bold text-gradient-accent">8.5/10</div>
-              <div className="text-sm text-muted-foreground">Match Score</div>
+          <div className="absolute bottom-8 sm:bottom-20 -right-2 sm:-right-8 glass-card animate-pulse-glow text-xs sm:text-sm">
+            <div className="text-center p-2 sm:p-4">
+              <div className="text-lg sm:text-2xl font-bold text-gradient-accent">8.5/10</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Match Score</div>
             </div>
           </div>
         </div>

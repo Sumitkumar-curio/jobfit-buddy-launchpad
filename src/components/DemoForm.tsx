@@ -118,16 +118,16 @@ export default function DemoForm() {
             <span>Free Demo - Try Now</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             See JobFit Buddy in <span className="text-gradient-accent">Action</span>
           </h2>
           
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground">
             Upload your resume and get instant feedback on how to improve your ATS score
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
           {/* Input Form */}
           <Card className="glass border-border/50">
             <CardHeader>
@@ -167,7 +167,7 @@ export default function DemoForm() {
                   <SelectTrigger className="glass border-border/50">
                     <SelectValue placeholder="Select your target role" />
                   </SelectTrigger>
-                  <SelectContent className="glass border-border/50">
+                  <SelectContent className="glass border-border/50 bg-card/95 backdrop-blur-xl z-50">
                     {jobProfiles.map((profile) => (
                       <SelectItem key={profile} value={profile}>
                         {profile}
